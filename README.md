@@ -1,9 +1,10 @@
-# format-object-keys
+# format-object-keys [![CircleCI](https://circleci.com/gh/kunal-mandalia/format-object-keys.svg?style=svg)](https://circleci.com/gh/kunal-mandalia/format-object-keys)
 Format keys in an object to be camelCase, PascalCase, or a custom format.
 
 ## Example
 
 ```
+// import function
 const formatObjectKeys = require('./formatObjectKeys)
 
 // provide a data structure whose
@@ -56,5 +57,5 @@ console.log(result)
 ## Limitations
 No support for circular references yet. PRs welcome to support this feature.
 
-## LICENSE
+## License
 MIT
