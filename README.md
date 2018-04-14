@@ -1,11 +1,15 @@
 # format-object-keys [![CircleCI](https://circleci.com/gh/kunal-mandalia/format-object-keys.svg?style=svg)](https://circleci.com/gh/kunal-mandalia/format-object-keys)
 Format keys in an object to be camelCase, PascalCase, or a custom format.
 
+## Install
+
+`yarn add format-object-keys`
+
 ## Example
 
 ```
 // import function
-const formatObjectKeys = require('./formatObjectKeys)
+const formatObjectKeys = require('format-object-keys')
 
 // provide a data structure whose
 // keys you want formatted
