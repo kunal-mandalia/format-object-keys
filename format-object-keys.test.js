@@ -83,4 +83,48 @@ describe('format-object-keys', () => {
       [formatter(String(d))]: 1
     })
   })
+
+  it('should format object keys to camelCase', () => {
+    // assign
+    const obj = {
+      FIRST_NAME: 'Kunal',
+      LAST_NAME: 'Mandalia',
+      LOCATION: 'London',
+      JOB_HISTORY: [
+        {
+          DATE_FROM: 'April 2016',
+          DATE_TO: 'Present',
+          TITLE: 'Js developer'
+        }
+      ]
+    }
+    const formatter = key => {
+      if (typeof key === 'string') {
+        return key.toLowerCase()
+          .split('_')
+          .map((word, i) => i > 0
+            ? word[0].toUpperCase() + word.substr(1)
+            : word
+          )
+          .join('')
+      }
+      return key
+    }
+
+    // act
+    const result = formatObjectKeys(obj, formatter)
+    // assert
+    expect(result).toEqual({
+      firstName: 'Kunal',
+      lastName: 'Mandalia',
+      location: 'London',
+      jobHistory: [
+        {
+          dateFrom: 'April 2016',
+          dateTo: 'Present',
+          title: 'Js developer'
+        }
+      ]
+    })
+  })  
 })
