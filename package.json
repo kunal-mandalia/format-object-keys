@@ -3,7 +3,10 @@
   "version": "0.1.0",
   "description": "format javascript object keys e.g. to camelCase",
   "main": "format-object-keys.js",
-  "repository": "https://github.com/kunal-mandalia/format-object-keys.git",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/kunal-mandalia/format-object-keys.git"
+  },
   "author": "Kunal Mandalia <kunal.v.mandalia@gmail.com> (http://kunalmandalia.com/)",
   "license": "MIT",
   "devDependencies": {
@@ -12,5 +15,15 @@
   "scripts": {
     "test": "jest --watch",
     "test-ci": "jest"
-  }
+  },
+  "bugs": {
+    "url": "https://github.com/kunal-mandalia/format-object-keys/issues"
+  },
+  "homepage": "https://github.com/kunal-mandalia/format-object-keys#readme",
+  "keywords": [
+    "format",
+    "javascript",
+    "object",
+    "keys"
+  ]
 }
