@@ -20,7 +20,7 @@ const dataStructure = {
   JOB_HISTORY: [
     {
       DATE_FROM: 'April 2016',
-      DATE_TO: 'Present'.
+      DATE_TO: 'Present',
       TITLE: 'Js developer'
     }
   ]
@@ -44,18 +44,18 @@ const formatter = key => {
 
 const result = formatObjectKeys(dataStructure, formatter)
 console.log(result)
-{
-  firstName: 'Kunal',
-  lastName: 'Mandalia',
-  location: 'London',
-  jobHistory: [
-    {
-      dateFrom: 'April 2016',
-      dateTo: 'Present'.
-      title: 'Js developer'
-    }
-  ]
-}
+// {
+//   firstName: 'Kunal',
+//   lastName: 'Mandalia',
+//   location: 'London',
+//   jobHistory: [
+//     {
+//       dateFrom: 'April 2016',
+//       dateTo: 'Present',
+//       title: 'Js developer'
+//     }
+//   ]
+// }
 ```
 
 ## Limitations
