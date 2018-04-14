@@ -1,0 +1,9 @@
+{
+  "dependencies": {
+    "jest": "22.4.3"
+  },
+  "scripts": {
+    "test": "jest --watch",
+    "test-ci": "jest"
+  }
+}
