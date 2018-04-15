@@ -7,7 +7,7 @@ Format keys in an object to be camelCase, PascalCase, or a custom format.
 
 ## Example
 
-```
+```javascript
 // import function
 const formatObjectKeys = require('format-object-keys')
 
